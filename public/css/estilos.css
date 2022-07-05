@@ -27,7 +27,7 @@ header{
   flex-wrap: wrap;
   height: 7vh;
   width: 100%;
-  background-color: grey;
+  background-color: rgb(40, 121, 177);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -146,7 +146,7 @@ justify-content: center;
 }
 
 .banner__titulo h1{
-  background-color: rgba(0, 0, 0, 0.2);(140, 140, 140);
+  background-color: rgba(0, 0, 0, 0.3);(140, 140, 140);
   color: white;
   position: absolute;
   display: flex;
@@ -159,15 +159,66 @@ justify-content: center;
   width: 30vh;
 }
 
+.container-fluid{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(0, 0, 0, 0.75);(140, 140, 140);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 2px 0 0;
+}
+#us{
+  height: 100%;
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 25% 10% 25%;
+  font-size: 1rem;
+}
 
 
+#products{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.section__title{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 4% 0% 0%;
+
+
+}
+#products p{
+  display: flex;
+  padding: 2% 5% 25%;
+  background-color: rgba(0, 0, 0, 0.05);(140, 140, 140);
+  border-radius: 5%;
+}
+
+.img_model{
+  width: 100%;
+  height: 100%;
+}
 /* SoloPC */
 
 .banner__carousel{
   display: none;
 }
 /* no por el momento */
-.container-fluid{
-  display: none;
-
-}
