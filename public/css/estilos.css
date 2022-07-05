@@ -6,7 +6,6 @@ html{
 
 body{
   margin: 0;
-  background-color: rgb(40, 121, 177);
 }
 
 *{
@@ -26,25 +25,26 @@ header{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 10vh;
+  height: 7vh;
   width: 100%;
-  background-color: rgb(40, 121, 177);
+  background-color: grey;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
+/* no realiza border radius */
 .header__logo{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 50%;
+  border-radius: 5%;
+  height: 90%;
+  width: 55%;
 
 }
 
 .header_icono{
-  height: 70%;
-  width: 20%;
+  height: 50%;
+  width: 12%;
   background-color: rgb(40, 121, 177);
   border: 0;
 
@@ -121,5 +121,53 @@ section{
 
 .img_model{
   border-radius: 5%;
+
+}
+
+#banner{
+background-color: red;
+width: 100%;
+height: 88vh;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+}
+
+.banner__titulo{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(120, 140, 140);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner__titulo h1{
+  background-color: rgba(0, 0, 0, 0.2);(140, 140, 140);
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin: auto;
+  height: 30vh;
+  width: 30vh;
+}
+
+
+
+/* SoloPC */
+
+.banner__carousel{
+  display: none;
+}
+/* no por el momento */
+.container-fluid{
+  display: none;
 
 }
