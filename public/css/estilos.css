@@ -36,15 +36,17 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5%;
+  padding-left: 2%;
+  border-radius: 2%;
   height: 90%;
-  width: 55%;
+  width: 20%;
 
 }
 
 .header_icono{
-  height: 50%;
-  width: 12%;
+  height: 60%;
+  width: 14%;
+  padding-right: 2%;
   background-color: rgb(40, 121, 177);
   border: 0;
 
@@ -99,9 +101,9 @@ header{
 }
 
 .nav__link{
-color: white;
-font-size: 2rem;
-text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 section{
@@ -121,13 +123,13 @@ section{
 }
 
 #banner{
-background-color: red;
-width: 100%;
-height: 88vh;
-display: flex;
-align-items: center;
-align-content: center;
-justify-content: center;
+  background-color: red;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .banner__titulo{
@@ -205,16 +207,48 @@ justify-content: center;
 
 }
 #products p{
+  width: 90%;
   display: flex;
-  padding: 2% 5% 25%;
-  background-color: rgba(0, 0, 0, 0.03);(140, 140, 140);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 2% 2% 2%;
+  background-color: rgba(0, 0, 0, 0.05);(140, 140, 140);
   border-radius: 5%;
 }
+.col-12{
+  padding: 0% 2% 25%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.cornisas{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.antepechos{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.marcos{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 
 .img_model{
   width: 100%;
   height: 100%;
-
 }
 
 
@@ -228,6 +262,8 @@ justify-content: center;
   align-content: center;
   justify-content: center;
   font-size: 1rem;
+  padding: 0% 0% 0%;
+
 }
 
 .contact__AV{
@@ -239,22 +275,40 @@ justify-content: center;
   align-content: center;
   justify-content: center;
   font-size: 1rem;
-  padding: 25% 0 25%;
+  padding-bottom: 40%;
 }
 
-.contac__icon h3{
-  font-size: 0.8rem;
-}
-
-.contac__icon{
+.contac__item{
   display: flex;
   flex-flow: column;
   align-items: center;
   align-content: center;
   justify-content: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  padding: 5% 0% 0%;
 }
 
-.contac__icon_1{
+.contac__item span{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  padding-top: 2%;
+}
+
+.contac__item a{
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  padding-top: 2%;
+}
+
+.contac__image{
   width: 15%;
   height: 15%;
   display: flex;
@@ -263,6 +317,25 @@ justify-content: center;
   align-content: center;
   justify-content: center;
   padding: 15% 0 0;
+}
+
+/* Footer */
+
+footer{
+  height: 4vh;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+}
+
+footer span{
+  font-size: 0.6rem;
+  color: white;
+  text-align: center;
 }
 
 /* SoloPC */
