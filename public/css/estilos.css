@@ -340,7 +340,44 @@ footer span{
 
 /* SoloPC */
 
+@media (min-width: 950px) {
+
+  .header{
+    height: 100vh;
+  }
+  .header_icono{
+    display: none;
+  }
+  .header__nav{
+    width: 80%;
+    background-color: rgb(40, 121, 177);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    display: none;
+    background-color: transparent;
+    flex-direction: row;
+
+  }
+
+  .header__nav ul{
+    background-color: rgb(40, 121, 177);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #banner{
+    display: none;
+  }
+
+ }
+
+
+/* no por el momento */
+
 .banner__carousel{
   display: none;
 }
-/* no por el momento */
