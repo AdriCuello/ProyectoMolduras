@@ -1,0 +1,79 @@
+/* general */
+/* no se cambio la tipografia */
+html{
+  font-family: 'Merriweather', serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+height: 100%;
+width: 100%;
+}
+
+#bannerx2{
+  background-color: grey;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+}
+
+#bannerx2 img{
+width: 18%;
+height: 50%;
+
+}
+
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 7vh;
+  width: 100%;
+  background-color: rgb(40, 121, 177);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 5%;
+
+}
+
+
+
+/* Footer */
+
+footer{
+  height: 4vh;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+}
+
+footer span{
+  font-size: 0.6rem;
+  color: white;
+  text-align: center;
+}

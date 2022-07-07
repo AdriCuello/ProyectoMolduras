@@ -32,13 +32,11 @@ header{
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* no realiza border radius */
 .header__logo{
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 2%;
-  border-radius: 2%;
   height: 90%;
   width: 20%;
 
@@ -55,9 +53,11 @@ header{
 
 
 .header__nav{
+  z-index: 10;
   width: 100%;
   height: 300%;
   background-color: rgb(40, 121, 177);
+  margin-top: 0.5vh;
   display: flex;
   align-items: center;
   align-content: center;
@@ -81,31 +81,30 @@ header{
 }
 
 .header__nav ul{
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 95%;
   background-color: rgb(40, 121, 177);
   display: flex;
-  align-items: center;
-  align-content: center;
   justify-content: space-around;
   flex-direction: column;
+
   font-family: Merriweather;
+  background-color: rgba(0, 0, 0, 0.05);(140, 140, 140);
+  padding: 0 0;
+  margin-bottom: 0;
+
 }
 
 
 .header__nav li{
-  width: 100%;
   display: flex;
-  align-items: center;
-  align-content: center;
   justify-content: center;
-  list-style: none;
   text-align: center;
 }
 
 .nav__link{
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -154,7 +153,7 @@ section{
   align-items: center;
   align-content: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: auto;
   height: 30vh;
   width: 30vh;
@@ -347,191 +346,17 @@ footer span{
   text-align: center;
 }
 
-/* -----------SoloPC--------------------------------------- */
-
-@media (min-width: 950px) {
-
-  header{
-    height: 5vh;
-    width: 100%;
-  }
-  .header_icono{
-    display: none;
-  }
-  .header__logo{
-    height: 90%;
-    width: 8%;
-  }
-
-  .header__nav{
-    height: 100%;
-    width: 30%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-  }
-
-  .header__nav ul{
-    height: 100%;
-    width: 90%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 0;
-    padding: 0 0 0;
-
-  }
-  .nav__link{
-    height: 80%;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 1.3rem;
-  }
-/* Banner */
-
-  .banner__titulo{
-    display: none;
-  }
-  #banner{
-    background-color: rgb(40, 121, 177);
-    width: 100%;
-    height: 100%;
-
-  }
-
-  .banner__carousel{
-    display: block;
-    width: 80%;
-  }
-/* ---------------Revisar carousel --------*/
-  .carousel-control-next{
-    height: 20vh;
-    width: 20vh;
-  }
-  .carousel-control-prev{
-    height: 20vh;
-    width: 20vh;
-    margin-top: 150px;
-
-  }
-
-  /* main */
-
-  .section__title{
-    font-size: 2.5rem;
-    }
-
-  /* Nosotros */
-
-  #us{
-    height: auto;
-  }
-
-  #us p{
-    font-size: 1.7rem;
-    margin-top: 8%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  /* products */
-
-  #products{
-    font-size: 1rem;
-  }
-
-  .section__title{
-    font-size: 2.5rem;
-    padding: 4% 0% 0%;
-
-
-  }
-  #products p{
-    width: 50%;
-    margin-top: 5vh;
-    border-radius: 1%;
-    font-size: 1.5rem;
-
-  }
-
-  .img_model{
-    width: 60%;
-    height: 85%;
-  }
-
-  /* Contacto */
-
-  .container-fluid{
-    background-color: rgb(40, 121, 177);
-
-  }
-
-  #contact h2{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15vh;
-  }
-
-  #contact{
-    width: 50%;
-
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 10vh;
-
-  }
-
-  .contact__AV{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 1rem;
-    padding-bottom: 0;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-  }
-
-  .col-11{
-    height: 25vh;
-    width: 25%;
-
-  }
-
-  .contac__image{
-    width: 35%;
-    height: 35%;
-    padding: 0 0 0;
-  }
-
- }
-
-
 /* tablet-----------------------------------------------------------*/
 
 @media (min-width: 767px) {
-
   header{
     height: 8vh;
     box-shadow: none;
   }
 
-  /* no realiza border radius */
   .header__logo{
     padding-left: 0%;
     margin-left: 5vh;
-    border-radius: 2%;
     height: 85%;
     width: 16%;
   }
@@ -545,8 +370,11 @@ footer span{
 
 
   .header__nav{
-    height: 50vh;
-    background-color: rgb(40, 121, 200);
+    height: 30vh;
+    background-color: rgb(40, 121, 177);
+    margin-top: 0.08vh;
+
+
   }
 /* ----------ver----------- */
   .header__nav--active{
@@ -565,31 +393,33 @@ footer span{
   }
 
   .header__nav ul{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(40, 121, 177);
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-around;
     flex-direction: column;
     font-family: Merriweather;
+    background-color: rgba(0, 0, 0, 0.05);(140, 140, 140);
+    padding: 0 0;
+
   }
 
 
   .header__nav li{
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     list-style: none;
     text-align: center;
+
   }
 
   .nav__link{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
   }
 
@@ -599,13 +429,19 @@ footer span{
   #banner{
     background-color: rgb(40, 121, 177);
     width: 100%;
-    height: 100%;
-
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
+
   .banner__titulo{
     width: 80vh;
     height: 90vh;
-    margin-top: 30vh;
+    margin-top: 5vh;
+    justify-content: center;
+    margin: 0 0 0;
   }
 
   .banner__carousel{
@@ -682,3 +518,192 @@ footer span{
     height: 35%;
     padding: 0 0 0;
  }
+
+
+
+
+
+/* -----------SoloPC--------------------------------------- */
+
+@media (min-width: 950px) {
+  body{
+    background-color: grey;
+  }
+  /* background-color: rgb(40, 121, 177); */
+
+  header{
+    height: 5vh;
+    width: 100%;
+  }
+
+  .header_icono{
+    display: none;
+  }
+
+  .header__logo{
+    height: 90%;
+    width: 5%;
+  }
+
+  .header__nav{
+    height: 100%;
+    width: 25%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 0.5vh;
+  }
+
+  .header__nav ul{
+    height: 100%;
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 0 0;
+  }
+
+  .nav__link{
+    height: 80%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+/* -------------Banner */
+  .banner__titulo{
+    display: none;
+  }
+
+  #banner{
+    background-color: rgb(40, 121, 177);
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0% 0% 0%;
+  }
+
+  .banner__carousel{
+    margin-top: 10vh;
+    display:  block;
+    width: 85%;
+    height: 70%;
+  }
+
+  .carousel-item{
+     margin: auto;}
+
+
+  /* Nosotros */
+
+  #us{
+    height: auto;
+  }
+  .section__title{
+    font-size: 2.5rem;
+    }
+
+
+  #us p{
+    font-size: 1.4rem;
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /* products */
+
+  #products{
+    font-size: 1rem;
+  }
+
+  .section__title{
+    font-size: 2.3rem;
+    padding: 4% 0% 0%;
+
+
+  }
+  #products p{
+    width: 50%;
+    margin-top: 5vh;
+    border-radius: 1%;
+    font-size: 1.2rem;
+
+  }
+
+  .img_model{
+    width: 60%;
+    height: 85%;
+  }
+
+  /* Contacto */
+
+  .container-fluid{
+    background-color: rgb(40, 121, 177);
+
+  }
+
+  #contact h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15vh;
+  }
+
+  #contact{
+    width: 50%;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+
+  }
+
+  .contact__AV{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding-bottom: 0;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .col-11{
+    height: 25vh;
+    width: 25%;
+
+  }
+
+  .contac__image{
+    width: 35%;
+    height: 35%;
+    padding: 0 0 0;
+  }
+
+ }
+
+
+ /* ------------------------------- */
+
+ #products a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+}
