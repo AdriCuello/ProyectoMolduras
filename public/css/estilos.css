@@ -2,6 +2,7 @@
 /* no se cambio la tipografia */
 html{
   font-family: 'Merriweather', serif;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -88,6 +89,7 @@ header{
   align-content: center;
   justify-content: space-around;
   flex-direction: column;
+  font-family: Merriweather;
 }
 
 
@@ -156,11 +158,17 @@ section{
   margin: auto;
   height: 30vh;
   width: 30vh;
+
 }
+.banner__carousel{
+  display: none;
+}
+
 
 /* Nosotros */
 
 .container-fluid{
+  font-family: Merriweather;
   width: 100%;
   height: 100%;
   display: flex;
@@ -339,7 +347,7 @@ footer span{
   text-align: center;
 }
 
-/* SoloPC */
+/* -----------SoloPC--------------------------------------- */
 
 @media (min-width: 950px) {
 
@@ -399,11 +407,21 @@ footer span{
     width: 100%;
     height: 100%;
 
-
   }
+
   .banner__carousel{
     display: block;
     width: 80%;
+  }
+/* ---------------Revisar carousel --------*/
+  .carousel-control-next{
+    height: 20vh;
+    width: 20vh;
+  }
+  .carousel-control-prev{
+    height: 20vh;
+    width: 20vh;
+    margin-top: 150px;
 
   }
 
@@ -500,4 +518,167 @@ footer span{
  }
 
 
-/* no por el momento */
+/* tablet-----------------------------------------------------------*/
+
+@media (min-width: 767px) {
+
+  header{
+    height: 8vh;
+    box-shadow: none;
+  }
+
+  /* no realiza border radius */
+  .header__logo{
+    padding-left: 0%;
+    margin-left: 5vh;
+    border-radius: 2%;
+    height: 85%;
+    width: 16%;
+  }
+
+  .header_icono{
+    height: 50%;
+    width: 10%;
+    padding-right: 2%;
+    background-color: rgb(40, 121, 177);
+  }
+
+
+  .header__nav{
+    height: 50vh;
+    background-color: rgb(40, 121, 200);
+  }
+/* ----------ver----------- */
+  .header__nav--active{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .header__nav--disabled{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    display: none;
+
+  }
+
+  .header__nav ul{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(40, 121, 177);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: Merriweather;
+  }
+
+
+  .header__nav li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+  }
+
+  .nav__link{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+/* Banner */
+
+
+  #banner{
+    background-color: rgb(40, 121, 177);
+    width: 100%;
+    height: 100%;
+
+  }
+  .banner__titulo{
+    width: 80vh;
+    height: 90vh;
+    margin-top: 30vh;
+  }
+
+  .banner__carousel{
+    display: none;
+  }
+  /* main */
+
+
+  /* Nosotros */
+
+  #us{
+    height: auto;
+  }
+
+  #us p{
+    font-size: 0.9rem;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #us h2{
+    font-size: 2rem;
+  }
+
+
+  /* products */
+
+  #products{
+    font-size: 0.9rem;
+  }
+
+  .section__title{
+    font-size: 2rem;
+    padding: 4% 0% 0%;
+
+
+  }
+  #products p{
+    width: 70%;
+    margin-top: 4vh;
+    border-radius: 0%;
+    font-size: 0.9rem;
+  }
+
+  .img_model{
+    width: 90%;
+    height: 90%;
+  }
+
+  /* Contacto */
+
+  .container-fluid{
+    background-color: rgb(40, 121, 177);
+
+  }
+
+  #contact h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20vh;
+  }
+
+  #contact{
+    width: 90%;
+  }
+
+  .col-11{
+    height: 25vh;
+    width: 25%;
+  }
+
+  .contac__image{
+    width: 35%;
+    height: 35%;
+    padding: 0 0 0;
+ }
